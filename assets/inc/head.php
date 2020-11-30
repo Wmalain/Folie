@@ -10,14 +10,17 @@
     gtag('config', 'G-765QRZF0SH');
     </script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="Le site qui vous conseillent de bons vieux films!">
+    <meta name="keywords" content="HTML, CSS, PHP, SQL">
+    <meta name="author" content="Alain Wehbe">
     <meta property="og:title" content="Good Old Movies" />
     <meta property="og:type" content="cinéma conseils" />
     <meta property="og:description" content="Le site qui vous conseillent de bons vieux films!" />
     <meta property="og:image" content="http://goodoldmovies.fr/assets/img/logoog.jpg"/>
     <meta property="og:image:type" content="image/jpeg" />
-<meta property="og:image:width" content="600" />
-<meta property="og:image:height" content="315" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
     <meta property="og:url" content="www.goodoldmovies.fr" />
     <title>GOM - Good Old Movies</title>
     <link rel="stylesheet" href="assets/css/style.css">
