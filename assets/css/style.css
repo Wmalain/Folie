@@ -443,11 +443,28 @@ template {
 
 .h1intro {
   font-family: anton, sans-serif;
-  color: red;
+  font-weight: bold;
+  color: rgba(255, 0, 0, 0.8);
   font-size: 3em;
   margin-top: 0px;
+  animation-duration: 2s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+  text-shadow: 2px 2px 19px rgba(255, 0, 0, 0.8);
 }
 
+@keyframes clignoter {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .pintro {
   width: 50%;
   font-family: sine, sans-serif;
