@@ -1,58 +1,91 @@
-//mise en forme de la card index
-.indexcard{
-    margin: 20px 10% 20px 10%;
-    border: 1px solid #316879;
-    padding: 1% 2% ;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 4px 4px 5px 5px $grey-color;
+.divintro{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
 }
-// mise en forme du titre Index
-.h1ind{
-    margin: 20px auto 5px auto;
-    text-align: center;
+
+.h1intro{
+    font-family: anton, sans-serif;
+    color : red;
     font-size: 3em;
-
-    @media screen and (max-width: $small-screen) {
-        font-size: 2em;
-    }
+    margin-top: 0px;
 }
-// mise en forme des paragraphe index
-.pindex1{
-    font-family: 'Roboto', sans-serif;
-    color: #316879;
-    text-align: center;
-    font-size: 1em;
-    margin-top: 15px;
-    margin-bottom: 25px;
+
+.pintro{
+    width:50%;
+    font-family: sine, sans-serif;
+    font-size: 2em;
+    color: white;
     text-align: justify;
-
-    @media screen and (max-width: $small-screen) {
-        font-size: 0.9em;
-    }
 }
 
-.pindex2{
-    font-family: 'Roboto', sans-serif;
-    color: #316879;
-    margin-bottom: 15px;
-    text-align: justify;
+.pintro2{
+    width:80%;
 
-    @media screen and (max-width: $small-screen) {
-        font-size: 0.9em;
-    }
-}
-// mise en form de la signature index
-.sign{
-    font-family: 'damion', sans-serif;
-    color: #F47A60;
-    font-weight: bold;
-    font-size: 1.2em;
-    text-align: right;
-    margin-right: 3%;
-
-    @media screen and (max-width: $small-screen) {
-        font-size: 1em;
-        text-align: center;
-    }
+    font-family: sine, sans-serif;
+    font-size: 2.5em;
+    text-align:center;
+    color: white;
 
 }
+
+.aintro{
+  position: relative;
+  color: red;
+      font-size: 2em;
+
+    // text-align: center;
+    // font-family: anton, sans-serif;
+    // color : red;
+    // margin-top: 0px;
+    // margin-left:auto;
+    // margin-right:auto;
+    // text-decoration: none;
+}
+
+
+.aintro {
+    display: inline-block;
+    position: relative;
+    color: red;
+    font-size: 2.2em;
+    text-decoration: none;
+
+}
+  .aintro::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: bottom right;
+    transition: transform 0.45s ease-out;
+  }
+  .aintro:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .aintro::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    top: 0;
+    right: 0;
+    background-color: red;
+    transform-origin: top left;
+    transition: transform 0.45s ease-out;
+  }
+  .aintro:hover::before {
+    transform: scaleX(1);
+    transform-origin: top right;
+  }

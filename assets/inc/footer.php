@@ -1,6 +1,5 @@
-<script>
-var refresh = window.getElementById('refresh');
-refresh.addEventListener('click', location.reload(), false);
-</script>
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
 </html>

@@ -1,0 +1,83 @@
+.rouedivgen{
+    height: 100vh;
+    background-size: 2em 100%;
+    background-color:black;
+    overflow: hidden;
+
+
+}
+
+.rouediv a{
+    display: block;
+  color: #929292;
+  font-family: Calibri;
+  font-size: 30px;
+  line-height: 4em;
+  text-decoration: none;
+}
+
+
+
+.rouediv {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 40em;
+    height: 40em;
+    bottom: -50%;
+    left: 25%;
+  }
+  
+  .roueitem {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: -50%;
+    bottom: 0;
+    top: -50%;
+    width: 40em;
+    height: 40em;
+    transform-origin: 101% 101%;
+  }
+  
+  /** 6 item menu */
+  .rouediv > .roueitem:nth-child(1) {
+    transform: skewX(30deg);
+  }
+  .rouediv > .roueitem:nth-child(2) {
+    transform: rotate(60deg) skewX(30deg);
+  }
+  .rouediv > .roueitem:nth-child(3) {
+    transform: rotate(120deg) skewX(30deg);
+  }
+  .rouediv > .roueitem:nth-child(4) {
+    transform: rotate(180deg) skewX(30deg);
+  }
+  .rouediv > .roueitem:nth-child(5) {
+    transform: rotate(240deg) skewX(30deg);
+  }
+  .rouediv > .roueitem:nth-child(6) {
+    transform: rotate(300deg) skewX(30deg);
+  }
+  
+  .roueitem > * {
+    position: absolute;
+    top: 55%; left: 55%;
+    width: 90%; height: 90%;
+    text-align: center;
+  }
+  
+  .roueitem > a {
+    border-radius: 50%;
+    transform: skewX(-30deg) rotate(-60deg);
+    border: 2px solid #929292;
+  }
+  
+  .rouediv a:hover {
+    transition: 0.7s ease;
+    border: 2px solid #929292;
+    background-color:#929292;
+    color: black;
+
+  }
